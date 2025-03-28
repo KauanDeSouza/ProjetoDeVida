@@ -59,4 +59,21 @@ body {
 .botoes {
     display: block;
 }
-  
+
+.botao.ativo{
+    background-color:var(--botao-ativo);
+    font-weight: bold;
+    border-bottom:4px solid #6FFF57;
+}
+@media screen and (min-width: 768px) {
+    .botoes{
+        display: flex;
+    }
+
+    .botao:first-child {
+      border-radius: 40px 0 0 0;
+    }
+    .botao:last-child {
+        border-radius: 0 40px 0 0;
+      }
+  }
